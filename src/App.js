@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import Card from './components/card'
 import {generate as id} from 'shortid'
+
+// Components
+import Card from './components/Card'
 
  function App() {
     const data_cards = 
@@ -42,8 +44,9 @@ import {generate as id} from 'shortid'
     ]
     return (
        <div className="cards">
-            {data_cards.map(card => {
-                return(
+            {
+            data_cards.map(card => (
+                
                     <Card
                     title={card.title}
                     author={card.author}
@@ -55,8 +58,9 @@ import {generate as id} from 'shortid'
                     >
                     {card.description}
                     </Card>
-                ) 
-            })}
+                 
+            ))
+    }
         </div>
     );
 }; 
