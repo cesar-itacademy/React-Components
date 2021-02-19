@@ -44,7 +44,6 @@ import {generate as id} from 'shortid'
        <div className="cards">
             {data_cards.map(card => {
                 return(
-                
                     <Card
                     title={card.title}
                     author={card.author}

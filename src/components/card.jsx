@@ -3,7 +3,6 @@ import {generate as id} from 'shortid'
 
 const Card = ({author, date, img, title, key, tags, views, children}) => {
         return (
-            <>
                 <div className="card">
                     <h2 className="card title">{title}</h2>
                     <img className="card_img" src={img} alt={title} />
@@ -17,7 +16,6 @@ const Card = ({author, date, img, title, key, tags, views, children}) => {
                     <p className="card_views">{views}</p>
                     <p className="card_date">{date}</p>
                 </div>
-            </>
         )
 };
     
